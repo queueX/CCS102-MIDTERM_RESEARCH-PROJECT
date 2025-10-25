@@ -150,9 +150,8 @@ public class Program {
 						  System.out.println("Your new balance is: ₱"+balance);
            }
            else {
-
-           }
 						System.out.println("Invalid amount! Please enter an amount greater than ₱0");
+           }
 					}
 					else if (transaction_option == 2) {
 						System.out.println("\n——— WITHDRAW ———");
