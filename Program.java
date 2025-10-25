@@ -143,11 +143,16 @@ public class Program {
 						System.out.print("Enter amount to deposit: ");
 						int deposit_amount = sc.nextInt();
 						
-						System.out.println("You have successfully deposited ₱"+deposit_amount);
-						balance += deposit_amount;
-						transaction ++;
-						System.out.println("Your new balance is: ₱"+balance);
-						
+           if (deposit_amount > 0){
+						  System.out.println("You have successfully deposited ₱"+deposit_amount);
+						  balance += deposit_amount;
+						  transaction ++;
+						  System.out.println("Your new balance is: ₱"+balance);
+           }
+           else {
+
+           }
+						System.out.println("Invalid amount! Please enter an amount greater than ₱0");
 					}
 					else if (transaction_option == 2) {
 						System.out.println("\n——— WITHDRAW ———");
